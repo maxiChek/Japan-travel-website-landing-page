@@ -40,7 +40,7 @@ html {
 body {
   font-family: "Lato";
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.2;
   font-weight: normal;
   color: #102746;
@@ -92,9 +92,106 @@ body {
 /* Intro styles start */
 
 .intro {
-  height: 100vh;
+  min-height: 100vh;
   background: url(../img/intro-bg.jpg) no-repeat center;
   background-size: cover;
+  padding-top: 16.44rem;
 }
 
+.intro__title {
+  max-width: 38.6875rem;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 3.75rem;
+  color: white;
+  margin-bottom: 1.37rem;
+}
+
+.intro__subtitle {
+  max-width: 34.125rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 3.69rem;
+}
+
+.search-form__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form__field {
+  flex-basis: 18.5625rem;
+  background: url(../img/svg/circle-ico.svg) no-repeat left 6px;
+  background-size: 1.25rem;
+  border: 0;
+  border-bottom: 0.1875rem solid #bfc0c5;
+  margin-right: 3.78rem;
+  padding-left: 2.69rem;
+  padding-bottom: 1.38rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.search-form__field::placeholder {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.search-form__submit {
+  padding: 0.94rem 2.44rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+  background: #1b7dff;
+  border: 0;
+}
+
+.search-form__submit:hover,
+.search-form__submit:focus,
+.search-form__submit:active {
+  background: #0e66da;
+}
 /* Intro styles end */
+
+/* Benefits styles start */
+
+.benefits {
+  margin-bottom: 0;
+}
+
+.benefits__wrap {
+  max-width: 78.875rem;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+  position: relative;
+}
+
+.benefits__title {
+  width: 100%;
+  color: #102746;
+  font-weight: 500;
+  font-size: 2.1875rem;
+  line-height: normal;
+  padding: 4.88rem 6.19rem 7.5rem 6.19rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: #fff;
+}
+
+.benefits__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3.44rem;
+  padding: 0 6.25rem;
+}
+
+/* Benefits styles end */
+
+/* Places styles start */
